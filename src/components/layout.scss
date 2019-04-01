@@ -1118,7 +1118,8 @@ $cloud-width: $cloud-height * 2.2;
   border:none;
 }
 
-.contact-form button{
+.contact-form button,
+.form-success button{
   background: $cyan;
   border:none;
   padding:.5em;
@@ -1127,7 +1128,13 @@ $cloud-width: $cloud-height * 2.2;
   transition:ease-in-out .4s all;
 }
 
-.contact-form button:hover{
+.form-success button{
+  margin-top: 1.35em;
+  width: 100%;
+}
+
+.contact-form button:hover,
+.form-success button:hover{
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -1147,6 +1154,30 @@ $cloud-width: $cloud-height * 2.2;
 footer{
   color:#fff;
   text-align: center;
+}
+
+.form-success{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-success img{
+  min-width: 190px;
+}
+
+.redirect-home{
+  color:$cyan;
+}
+
+.form-submitted-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
 }
 
 @keyframes spin {

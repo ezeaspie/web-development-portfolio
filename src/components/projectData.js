@@ -5,10 +5,10 @@ import PirateSeas0 from '../images/projects/PirateSeas.jpg';
 import PirateSeas1 from '../images/projects/PirateSeasBattle.jpg';
 import Website0 from '../images/projects/WebsiteCapture.jpg';
 import Website1 from '../images/projects/WebsiteMobile.jpg';
-import Spotify0 from '../images/projects/SpotifyDesktop.png';
-import Spotify1 from '../images/projects/SpotifyMobile.png';
-import EED from '../images/projects/ezequielespinozadev1.png';
-import EED1 from '../images/projects/ezequielespinozadev2.png';
+import Spotify0 from '../images/projects/SpotifyDesktop.jpg';
+import Spotify1 from '../images/projects/SpotifyMobile.jpg';
+import EED from '../images/projects/ezequielespinozadev1.jpg';
+import EED1 from '../images/projects/ezequielespinozadev2.jpg';
 
 const projectFactory = (name,description,skills,images,color,links) => {
     return{
@@ -25,9 +25,9 @@ let projects = [
     projectFactory(
         "ezequielespinoza.com",
         <div className="project-description">
-            <p>I have built a personal website that boasts a gallery, blog, and comic reader.</p>
-            <p>The site is built using the static-site generator <span>Gatsby</span>. Gatsby was chosen because it makes image optimization and Search Engine Optimization easy. The intergation with GraphQL also made it an appealing choice, as it was possible to build a blog without the need for a database or extensive backend.</p>
-            <p>The site's gallery makes use of GraphQL queries and Gatsby's image optimization to lazy-load the images and scale them depending on screen size, making it fast despite loading multiple images.</p>
+            <p>A <span className="accent">personal website</span> that boasts a <span className="accent">gallery</span>, <span className="accent">blog</span>, and <span className="accent">comic reader</span>.</p>
+            <p>The site is built using the static-site generator <span>Gatsby</span> because it makes <span className="accent">image optimization</span> and <span className="accent">Search Engine Optimization</span> easy. The intergation with <span className="accent">GraphQL</span> also made it an appealing choice, as it was possible to build a blog without the need for a database or extensive backend.</p>
+            <p>The site's gallery makes use of GraphQL queries and Gatsby's image optimization to <span className="accent">lazy-load</span> the images and scale them depending on screen size, making it <span className="accent">fast</span> despite loading multiple images.</p>
             <p>The blog takes Markdown documents and using Gatsby plugins is able to dynamically create blog post pages for each file.</p>
             <p>The comic reader allows visitors to read my comics. The site creates pages for each chapter and is easy to navigate from page to page or chapter to chapter.</p>
         </div>,
@@ -42,7 +42,7 @@ let projects = [
     projectFactory(
         "Next Bus Express",
         <div className="project-description">
-            <p>I'm the creator of <span className="accent">Next Bus Express</span>, a simple but effective web app that allows a user to look up bus stops and routes in the MetroBus system.</p>
+            <p><span className="accent">Next Bus Express</span> is a simple but effective web app that allows a user to look up bus stops and routes in the MetroBus system.</p>
             <p>Next Bus Express can perform searches of <span className="accent">street intersections, bus stop ID's, and route names</span>. The <span className="accent">Node.js</span> based <span className="accent">Express</span> backend then connects to the <span className="accent">Metro API</span> and handles <span className="accent">routing</span> to return relevant and easy to read results.</p>
             <p>Next Bus Express also makes use of <span className="accent">localForage</span> to remember stops the user has saved and show the schedule when the app is opened.</p>
         </div>,
@@ -57,31 +57,30 @@ let projects = [
     projectFactory(
         "Youtube-Spotify Playlists",
         <div className="project-description">
-            <p>Wanting to convert a few playlists I had on my Spotify account to my Youtube account without having to manually search for every video in the playlist inspired me to create this app.</p>
-            <p>Using both the Spotify and Youtube APIs, this app allows a user to sign in and select one of their Spotify playlists and export it to their Youtube account with just a few clicks.</p>
-            <p>Songs from the Spotify playlist are searched, then the videos returned from the Youtube API are added to a new playlist that will be shown on the user's Youtube account!</p>
+            <p>Using both the <span className="accent">Spotify and Youtube APIs</span>, this app allows a user to sign in and select one of their Spotify playlists and <span className="accent">export it to their Youtube account</span> with just a few clicks.</p>
+            <p>Songs from the Spotify playlist are searched, then the videos returned from the Youtube API are <span className="accent">added to a new playlist</span> that will be shown on the user's Youtube account!</p>
         </div>,
         ["React","Node.js","OAuth","APIs","AJAX","Express","Heroku","Javascript","Responsive Design","CSS","HTML",],
         [Spotify0,Spotify1],
         "#303f9f",
         [
-            "https://github.com/ezeaspie/gatsby-art-site",
-            "https://github.com/ezeaspie/gatsby-art-site",
+            "https://github.com/ezeaspie/youtube-spotify-backend",
+            "https://youtube-spotify-frontend.herokuapp.com/",
         ]
     ),
     projectFactory(
         "ezequielespinoza.dev",
         <div className="project-description">
-            <p>This portfolio site was built using React. A majority of the CSS and Animations are hand-coded.</p>
-            <p>Fully responsive, the site looks and feels great on all devices and across browsers.</p>
-            <p>Form submission is handled with Gatsby and Netlify services.</p>
+            <p>This portfolio site was built using <span className="accent">React</span>. A majority of the <span className="accent">CSS and Animations</span> are hand-coded.</p>
+            <p>Fully <span className="accent">responsive</span>, the site looks and feels great on all devices and <span className="accent">across browsers</span>.</p>
+            <p>Form submission is handled with <span className="accent">Gatsby</span> and <span className="accent">Netlify</span> services.</p>
         </div>,
         ["React","Gatsby", "SASS", "CSS + Animation","SEO","Performance","Responsive Design","Javascript","HTML"],
         [EED,EED1],
         "#2D932D",
         [
-            "https://github.com/ezeaspie/gatsby-art-site",
-            "https://github.com/ezeaspie/gatsby-art-site",
+            "https://github.com/ezeaspie/web-development-portfolio",
+            "https://ezequielespinoza.dev/",
         ]
         
     ),
@@ -96,8 +95,8 @@ let projects = [
         [PirateSeas0,PirateSeas1],
         "#00bcd4",
         [
-            "https://github.com/ezeaspie/gatsby-art-site",
-            "https://github.com/ezeaspie/gatsby-art-site",
+            "https://github.com/ezeaspie/pirate-ship-game",
+            "https://pirate-seas.netlify.com/",
         ]
         
     ),    

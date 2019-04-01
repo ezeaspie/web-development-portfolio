@@ -19,7 +19,7 @@ class ProjectButton extends Component {
                 onMouseOver={()=>{this.setState({showTooltip:true})}}
                 onMouseOut={()=>{this.setState({showTooltip:false})}}
                 style={{background: project.color}}>
-                <a href={this.props.link}><img alt="GitHub" src={image}/></a>
+                <a href={this.props.link} target="_blank" rel="noopener noreferrer"><img alt="GitHub" src={image}/></a>
                 </button>
                 <p className={this.state.showTooltip?"tooltip tooltip-shown":"tooltip"}>{tooltip}</p>
             </div>

@@ -4,7 +4,6 @@ import Logo from '../images/Logo.png';
 import Menu from '../images/menu.png';
 import Exit from '../images/exit.png';
 
-
 const Header = (props,{ siteTitle }) => (
   <header>
     <button className="open-menu" onClick={()=>{
