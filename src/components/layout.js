@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
+        <div className="container-content">
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Created by Ezequiel Espinoza
