@@ -1206,6 +1206,12 @@ footer{
   }
 }
 
+@media screen and (max-width:500px) {
+  .project-images{
+    padding:2em 0 0;
+  }
+}
+
 @media screen and (min-width:700px) {
   .header-nav{
     order:initial;
