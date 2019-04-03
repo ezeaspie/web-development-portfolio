@@ -52,14 +52,14 @@ class ContactForm extends Component{
         return(
             <div id="contact" className="contact-section">
                 <div className=" content-container-default">
-                <h2>Contact me</h2>
+                <h2>Get in touch</h2>
+                <p>Need help with your site or project? Send me a message and let's get in touch.</p>
                 <div className="contact-links">
                     <a href="https://github.com/ezeaspie" target="_blank" rel="noopener noreferrer"><img src={GitHub} alt="LinkedIn"></img></a>
                     <a href="https://www.linkedin.com/in/ezequiel-espinoza-3834a6182/" rel="noopener noreferrer" target="_blank"><img src={LinkedIn} alt="LinkedIn"></img></a>
                     <a href="https://codepen.io/EzeAsPie/#" target="_blank" rel="noopener noreferrer"><img src={CodePen} alt="codepen"></img></a>
                     <a href="https://www.ezequielespinoza.com/" target="blank" rel="noopener noreferrer"><img src={WebLogo} alt="personal-website"></img></a>
                 </div>
-                <p>Need help with your site or project? Send me a message and let's get in touch.</p>
                 <form
                     className="contact-form"
                     name="contact"
@@ -79,13 +79,13 @@ class ContactForm extends Component{
                     </p>
                     <p>
                         <label>
-                        Your name:<br />
+                        Name:<br />
                         <input type="text" name="name" onChange={this.handleChange} />
                         </label>
                     </p>
                     <p>
                         <label>
-                        Your email:<br />
+                        Email:<br />
                         <input type="email" name="email" onChange={this.handleChange} />
                         </label>
                     </p>

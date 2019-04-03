@@ -9,10 +9,11 @@ import ProjectButton from '../components/projectButton';
 import Skyline from '../images/skyline.png';
 import ContactForm from '../components/contactForm';
 import Fade from 'react-reveal/Fade';
+import Develop from '../components/develop';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`Ezequiel Espinoza`, `Web`, `Development`]} />
     <div className="big-info">
         <ul className="clouds">
           <li className="cloud x1"></li>
@@ -36,7 +37,10 @@ const IndexPage = () => (
       </div>
       </div>
 
+    <Develop/>
+
     <Tech/>
+
     <div className="project-category" id="projects">
       <h2>Projects</h2>
       <ul className="project-list">

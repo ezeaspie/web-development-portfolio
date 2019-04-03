@@ -726,7 +726,7 @@ $cloud-width: $cloud-height * 2.2;
 
 
 .tech-category{
-  background:#fff;
+  background:#f5f9fb;
   box-shadow: $boxShadow;
 
 }
@@ -737,6 +737,7 @@ $cloud-width: $cloud-height * 2.2;
   padding: 0;
   margin: 0;
   justify-content: space-around;
+  align-content: flex-end;
 }
 
 .tech{
@@ -762,7 +763,7 @@ $cloud-width: $cloud-height * 2.2;
   filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12));}
 
   .project-category{
-    background: #f5f9fb;
+    background: #fff;
     box-shadow: $boxShadow;
   }
 
@@ -857,7 +858,7 @@ $cloud-width: $cloud-height * 2.2;
 
   h1{
     margin:0;
-    font-family:'Helvetica';
+    font-family:'Gugi';
   }
 
   .header-main-info{
@@ -1184,6 +1185,34 @@ footer{
   color:#fff;
 }
 
+.develop-section{
+  background:#fff;
+  padding:2em 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.develop-card{
+  box-shadow:$boxShadow;
+  position: relative;
+  width:90%;
+  padding-top:5em;
+  margin-top:3em;
+  background: #f5f9fb;
+}
+
+.develop-card h3{
+  color:$blue;
+}
+
+.develop-card img{
+  position: absolute;
+  top:-2em;
+  right:1em;
+  width: 120px;
+}
+
 @keyframes spin {
   0%{
     transform: rotate(0deg) scale(1);
@@ -1256,6 +1285,16 @@ footer{
 
   .big-info{
     min-height:300px;
+  }
+}
+
+@media screen and (min-width:900px){
+  .develop-section{
+    flex-direction: row;
+  }
+
+  .develop-card{
+    width:30%;
   }
 }
 
