@@ -18,7 +18,7 @@ const Develop = () => (
         <div className="develop-card content-container-default">
             <img src={Deploy} alt="deploy-computer"></img>
             <h3>Deploy</h3>
-            <p>Get it on the Web.</p><p>When development is finished, I can help with hosting, registering domains, and Seatch Engine Optimization in order to get your site ready for anyone to see.</p>
+            <p>Get it on the Web.</p><p>When development is finished, I can help with hosting, registering domains, and Search Engine Optimization in order to get your site ready for anyone to see.</p>
         </div>
     </div>
 )
